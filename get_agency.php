@@ -1,6 +1,6 @@
 <?php
 
-	$con = mysqli_connect("hostName", "user", "pass", "DBName");
+	$con = mysqli_connect("HostName", "User", "Pass", "DBName");
 	
 	if (mysqli_connect_errno($con)){
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
