@@ -13,7 +13,7 @@
 	$row = mysqli_fetch_array($result);
 	$routeID = $row[0];
 	
-	$result = mysqli_query($con, " busstop.stopID, busstop.stopName, has.sequence FROM busstops, has WHERE has.routeID = '$routeID' and busstop.stopID = has.stopID ORDER BY has.sequence ASC");
+	$result = mysqli_query($con, " busstop.stopID, busstop.stopName FROM busstops, has WHERE has.routeID = '$routeID' and busstop.stopID = has.stopID ORDER BY has.sequence ASC");
 
 	$row = mysqli_fetch_array($result);
 	$data = $row[0];
